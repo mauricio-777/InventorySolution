@@ -1,0 +1,33 @@
+# --- 1. ARCHIVOS DE COMPILACIÓN (BASURA) ---
+# Estos se generan solos cuando compilas. No los subas.
+[Bb]in/
+[Oo]bj/
+
+# --- 2. BASE DE DATOS SQLITE (VITAL) ---
+# No queremos subir tus datos de prueba reales a internet.
+# El sistema creará una DB nueva y limpia si alguien baja el código.
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# --- 3. ARCHIVOS DEL IDE (VISUAL STUDIO / VS CODE) ---
+# Configuraciones locales de tu máquina que no le sirven a nadie más.
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- 4. ARCHIVOS DE .NET ---
+# Archivos temporales de paquetes y logs
+*.log
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# --- 5. ARCHIVOS DEL SISTEMA OPERATIVO ---
+# Basura de Windows o Mac
+.DS_Store
+Thumbs.db
